@@ -16,4 +16,20 @@ public class checkYears {
         }
         return true;
     }
+    
+    static String yearsExp(float years) {
+        if (years <= 1.5) {
+            String beginner = "Beginner";
+            return beginner;
+        }
+        if (1.5 < years && years <= 3) {
+            String intermediate = "Intermediate";
+            return intermediate;
+        }
+        if (years > 3) {
+            String advanced = "Advanced";
+            return advanced;
+        }
+        return "error";
+    } 
 }
